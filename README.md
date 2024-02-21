@@ -6,7 +6,7 @@
 
 ---
 
-###  Desenvolvimento Full Stack Basico
+###  Desenvolvimento Full Stack Básico
 - [01 - Programação Orientada a Objetos](https://github.com/angelozero/POS/tree/master/01%20-%20Sprint%20-%20Desenvolvimento%20Full%20Stack%20Basico/01%20-%20Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos)
 
 
