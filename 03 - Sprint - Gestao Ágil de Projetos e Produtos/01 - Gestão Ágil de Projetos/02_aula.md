@@ -7,7 +7,8 @@
     - Transparência
     - Inspeção
     - Adaptação
-    ![pialares_scrum](./imagens/pialares_scrum.png)
+
+    ![pialares_scrum](../images/pialares_scrum.png)
 ---
 - Processos do Scrum
     - Papéis
@@ -60,7 +61,8 @@
         - Como deve ser feito
     - Equipe de Desenvolvimento
         - Como será feito
-![artefato_scrum](./imagens/artefato_scrum.png)
+
+![artefato_scrum](../images/artefato_scrum.png)
 
 ---
 
@@ -77,7 +79,8 @@
         - Story points
             - Story points representam uma medida relativa de tamanho para itens de um backlog. Eles são afetados por diversos fatores, como a quantidade de funcionalidade a ser desenvolvida, a complexidade, riscos e incertezas, entre outros. Como a medida é relativa, para estimar com story points é preciso estabelecer uma referência para a comparação.
             
-            ![story_points](./imagens/story_points.png)
+            ![story_points](../images/story_points.png)
+            
     - Velocidade
         - Velocidade é a quantidade de trabalho que a equipe consegue completar em um sprint.
 ---

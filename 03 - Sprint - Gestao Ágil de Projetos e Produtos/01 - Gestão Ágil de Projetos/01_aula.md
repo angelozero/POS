@@ -61,31 +61,37 @@
     - Conduz as cerimônias do Scrum, facilita os eventos e remove impedimentos do time.
 ---
 - Manifesto
-![manifesto](./imagens/manifesto.png)
+
+![manifesto](../images/manifesto.png)
 
 ---
 
 - Doze princípios
-![doze_principios](./imagens/doze_principios.png)
+
+![doze_principios](../images/doze_principios.png)
 
 ---
 
 - Cascata
-![cascata](./imagens/cascata.png)
+
+![cascata](../images/cascata.png)
 
 ---
 
 - Incremental
-![incremental](./imagens/incremental.png)
+
+![incremental](../images/incremental.png)
 
 ---
 
 - Ciclo de vida Scrum
-![ciclo_de_vida_scrum](./imagens/ciclo_de_vida_scrum.png)
+
+![ciclo_de_vida_scrum](../images/ciclo_de_vida_scrum.png)
 
 ---
 
 - Papel Scrum
-![papel_scrum](./imagens/papel_scrum.png)
+
+![papel_scrum](../images/papel_scrum.png)
 
 ---

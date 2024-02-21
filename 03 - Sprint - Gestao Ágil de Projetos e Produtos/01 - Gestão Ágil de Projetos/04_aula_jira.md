@@ -1,2 +1,3 @@
 - 1 Roadmap
-![jira](./imagens/jira.png)
+
+![jira](../images/jira.png)
