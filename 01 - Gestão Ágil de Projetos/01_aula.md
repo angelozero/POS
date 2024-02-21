@@ -1,34 +1,34 @@
-Scrum
+# Scrum
 
-Ciclo de vida: do modelo cascata ao ciclo de vida associado ao Scrum
+- Ciclo de vida: do modelo cascata ao ciclo de vida associado ao Scrum
     - Modelo cascata
     - Modelo incremental
     - Modelo evolutivo
-
-Ciclo de vida associado ao Scrum
+---
+- Ciclo de vida associado ao Scrum
     - O Scrum é um framework de gestão ágil que é, ao mesmo tempo, iterativo, incremental e evolutivo.
-
-PO ( Product Owner )
+---
+- PO ( Product Owner )
     - Foco em retorno do investimento e valor agregado para o cliente
     - Unico que edita e gerencia o backlog do produto
-
-Scrum Master
+---
+- Scrum Master
     - Cuida do processo
     - Aplica o Scrum
     - Facilita os eventos
     - Remove impedimentos do time
     - Ensinar a correta aplicação do processo
-
-Equipe de Desenvolvimento
+---
+- Equipe de Desenvolvimento
     - Deve ser pró ativa
     - Autogerenciável
-
-Backlog do Produto
+---
+- Backlog do Produto
     - A gestão a1gil tem como base o backlog do produto mantido e priorizado pelo PO
     - Refinamento do backlog
     - Equipe de desenvolvimento deve investir de 5 a 10% do seu tempo para apoiar o PO
-
-Sprint
+---
+- Sprint
     - Corresponde a um periodo fixo de tempo
     - 2 semanas
     - Cerimonias realizadas para execução da Sprint
@@ -55,7 +55,37 @@ Sprint
             - Sprint Retrospectiva
             - Oportunidade de melhorias na próxima sprint
             - A reflexão da sprint envolve análisar o que foi bom e o que poderia melhorar
-
-O papel do Scrum master
+---
+- O papel do Scrum master
     - Scrum master foca em ajudar no correto entendimento e na adoção dos valores, princípios e práticas do Scrum
     - Conduz as cerimônias do Scrum, facilita os eventos e remove impedimentos do time.
+---
+- Manifesto
+![manifesto](./imagens/manifesto.png)
+
+---
+
+- Doze princípios
+![doze_principios](./imagens/doze_principios.png)
+
+---
+
+- Cascata
+![cascata](./imagens/cascata.png)
+
+---
+
+- Incremental
+![incremental](./imagens/incremental.png)
+
+---
+
+- Ciclo de vida Scrum
+![ciclo_de_vida_scrum](./imagens/ciclo_de_vida_scrum.png)
+
+---
+
+- Papel Scrum
+![papel_scrum](./imagens/papel_scrum.png)
+
+---

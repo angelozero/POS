@@ -1,14 +1,15 @@
-Scrum essencial
+# Scrum essencial
 
-Scrum: papéis, cerimônias e artefatos
+- Scrum: papéis, cerimônias e artefatos
     - O Scrum é um framework de gestão ágil que utiliza tempo fixo (sprints) em vez de escopo fixo para determinar seus incrementos
-
-Pilares do Scrum
+---
+- Pilares do Scrum
     - Transparência
     - Inspeção
     - Adaptação
-
-Processos do Scrum
+    ![pialares_scrum](./imagens/pialares_scrum.png)
+---
+- Processos do Scrum
     - Papéis
         - PO
             - O product owner, por sua vez, é responsável pela produção e gestão ágil dos requisitos para o produto. Ele foca no retorno de investimento (RoI) e no valor agregado para o cliente. Ele é o único que edita e gerencia o backlog do produto.
@@ -32,8 +33,8 @@ Processos do Scrum
         - Backlog do Produto
         - Backlog do sprint
         - Incremento de produto potencialmente entregável
-
-Cerimônias do Scrum
+---
+- Cerimônias do Scrum
     - O sprint corresponde a um período fixo de tempo (normalmente duas semanas) durante o qual um incremento utilizável do produto é criado.
     - Cerimônias: 
         - Planejamento do sprint
@@ -52,31 +53,35 @@ Cerimônias do Scrum
             - Oportunidade para a equipe refletir sobre melhorias a serem aplicadas no próximo sprint.
         - Refinamento do backlog
             - Envolve preparar os itens do backlog do produto para sprints futuros, refinando-os durante o sprint corrente para satisfazer a definition of ready. A equipe de desenvolvimento deveria investir de 5 a 10% do seu tempo de sprint para apoiar o PO em atividades de refinamento do backlog.
-    
-Artefatos do Scrum
+---
+- Artefatos do Scrum
     - Os artefatos do Scrum são o backlog do produto, o backlog do sprint e o incremento do produto potencialmente entregável gerado a cada novo sprint.
     - PO
         - Como deve ser feito
     - Equipe de Desenvolvimento
         - Como será feito
+![artefato_scrum](./imagens/artefato_scrum.png)
 
-Definition of ready (preparado)
+---
+
+- Definition of ready (preparado)
     - Descreve os requisitos que devem ser atendidos para que um item possa ser movido do backlog do produto para o backlog do sprint.
-
-Definition of done (feito)
+---
+- Definition of done (feito)
     - Descreve os requisitos que devem ser atendidos para que um item possa ser considerado concluído.
-
-Estimativa e velocidade
+---
+- Estimativa e velocidade
     - Estimativa
         - Ideal days
             - Ideal days representam o número de pessoas-dia necessário para tratar um item do backlog. Note que o tempo ideal não é o mesmo que tempo decorrido.
         - Story points
             - Story points representam uma medida relativa de tamanho para itens de um backlog. Eles são afetados por diversos fatores, como a quantidade de funcionalidade a ser desenvolvida, a complexidade, riscos e incertezas, entre outros. Como a medida é relativa, para estimar com story points é preciso estabelecer uma referência para a comparação.
+            
+            ![story_points](./imagens/story_points.png)
     - Velocidade
         - Velocidade é a quantidade de trabalho que a equipe consegue completar em um sprint.
-
-
-Aspectos avançados da gestão ágil de projetos
+---
+- Aspectos avançados da gestão ágil de projetos
     - Na engenharia de software contínua, as práticas de BizDev, DevOps e experimentação contínua são os elos entre a estratégia de negócio, o desenvolvimento e a operação.
     - BizDev
         - As práticas de BizDev buscam o alinhamento entre a estratégia de negócio e o desenvolvimento
@@ -85,7 +90,6 @@ Aspectos avançados da gestão ágil de projetos
     - Experimentação contínua
         - Conhecida como teste A/B, trata o ciclo de retroalimentação da operação para a estratégia de negócio.
     - O teste das hipóteses de negócio com o software em operação é a experimentação contínua, fechando um ciclo de retroalimentação.
-
-
+---
 - Extra:
         - Somente o PO pode marcar um item do backlog como um todo como concluído

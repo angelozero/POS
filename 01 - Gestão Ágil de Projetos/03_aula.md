@@ -1,4 +1,6 @@
-Aspectos Avançados da Gestão Ágil de Projetos
+# Aspectos Avançados da Gestão Ágil de Projetos
+---
+- Gestão Ágil
     - A produção just in time procura adequar a produção à demanda, fornecendo apenas o que é efetivamente encomendado e focando na eficiência, na produtividade e na redução de desperdícios.
     - LEAN
         - Lean é um método de produção que visa a reduzir continuamente os tempos de produção e de resposta de fornecedores e clientes, através de uma produção “enxuta” (lean) que foca na entrega de valor da perspectiva do cliente e na eliminação do desperdício. Lean está fortemente relacionado com o modelo operacional implementado nas décadas de 1950 e 1960 pela empresa automobilística Toyota, chamado de sistema Toyota de produção (OHNO, 1988), que se baseia no gerenciamento de estoque just in time e no controle de qualidade automatizado.
@@ -29,8 +31,8 @@ Aspectos Avançados da Gestão Ágil de Projetos
         - Comparado ao scrum, o kanban é mais simples, não estabelecendo sprints, nem papéis e cerimônias. O único artefato do kanban é o quadro kanban.
         - O kanban presume equipes autogerenciadas e multifuncionais.
         - Recomenda-se utilizar o quadro kanban com histórias de usuário, e não com as tarefas.
-
-Métodos ágeis escalados
+---
+- Métodos ágeis escalados
     - SAFe – framework ágil em escala
         - O SAFe (Scaled Agile Framework) é um framework para a aplicação do ágil em escala amplamente utilizado pelas organizações.
         
