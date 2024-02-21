@@ -76,7 +76,15 @@ Estimativa e velocidade
         - Velocidade é a quantidade de trabalho que a equipe consegue completar em um sprint.
 
 
-
+Aspectos avançados da gestão ágil de projetos
+    - Na engenharia de software contínua, as práticas de BizDev, DevOps e experimentação contínua são os elos entre a estratégia de negócio, o desenvolvimento e a operação.
+    - BizDev
+        - As práticas de BizDev buscam o alinhamento entre a estratégia de negócio e o desenvolvimento
+    - DevOps
+        - As práticas de DevOps buscam o alinhamento entre o desenvolvimento e a operação
+    - Experimentação contínua
+        - Conhecida como teste A/B, trata o ciclo de retroalimentação da operação para a estratégia de negócio.
+    - O teste das hipóteses de negócio com o software em operação é a experimentação contínua, fechando um ciclo de retroalimentação.
 
 
 - Extra:

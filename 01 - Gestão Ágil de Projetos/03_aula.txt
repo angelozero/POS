@@ -1,1 +1,36 @@
-Aspectos avançados da gestão ágil de projetos
+Aspectos Avançados da Gestão Ágil de Projetos
+    - A produção just in time procura adequar a produção à demanda, fornecendo apenas o que é efetivamente encomendado e focando na eficiência, na produtividade e na redução de desperdícios.
+    - LEAN
+        - Lean é um método de produção que visa a reduzir continuamente os tempos de produção e de resposta de fornecedores e clientes, através de uma produção “enxuta” (lean) que foca na entrega de valor da perspectiva do cliente e na eliminação do desperdício. Lean está fortemente relacionado com o modelo operacional implementado nas décadas de 1950 e 1960 pela empresa automobilística Toyota, chamado de sistema Toyota de produção (OHNO, 1988), que se baseia no gerenciamento de estoque just in time e no controle de qualidade automatizado.
+        - Entrega de Valor 
+        - Eliminação do desperdício
+        - Melhoria contínua
+        - O desenvolvimento de software lean        
+            - Eliminar desperdício​​
+            - Ampliar o aprendizado ( sprints / retros sprints / revisoes da sprint )
+            - Adiar as decisões
+            - Entregar o mais rápido possível
+            - Empoderar a equipe
+            - Construir com qualidade
+            - Otimizar
+        - Eliminação de desperdício em desenvolvimento de software
+            - Para eliminar o desperdício, deve-se ser capaz de identificá-lo. Tudo que não agrega valor ao produto deve ser eliminado. 
+            - Tipos de desperdício
+                - Trabalho parcilamente feito
+                - Features extras
+                - Reaprendizado
+                - Alternar tarefas
+                - Atrasos 
+                - Passagem de trabalho ( handoffs )
+                - Defeitos
+                - Sobrecarga gerencial
+    - KANBAN
+        - O kanban permite controlar o fluxo de produção de forma visual e intuitiva, com foco na eficiência. No kanban, cartões visuais são usados para controlar o fluxo de produção utilizando o conceito de produção just in time, em que as tarefas são preparadas sob demanda para as atividades seguintes, caracterizando um sistema de produção baseado em pull. 
+        - Comparado ao scrum, o kanban é mais simples, não estabelecendo sprints, nem papéis e cerimônias. O único artefato do kanban é o quadro kanban.
+        - O kanban presume equipes autogerenciadas e multifuncionais.
+        - Recomenda-se utilizar o quadro kanban com histórias de usuário, e não com as tarefas.
+
+Métodos ágeis escalados
+    - SAFe – framework ágil em escala
+        - O SAFe (Scaled Agile Framework) é um framework para a aplicação do ágil em escala amplamente utilizado pelas organizações.
+        
