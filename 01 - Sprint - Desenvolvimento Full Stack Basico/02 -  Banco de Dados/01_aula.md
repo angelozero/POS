@@ -24,6 +24,15 @@
     - As linhas de uma tabela formam um subconjunto do produto cartesiano dos domínios de cada coluna.
 ---
 - Outras características de relações
-    - Não têm elementos repetidos. 
+    - Não têm elementos repetidos. Como as linhas de uma tabela no modelo relacional não têm identificação própria, só podemos nos referir às tuplas pelos valores em seus atributos.
+---
+- Esquemas de bancos de dados relacionais
+    - Seja R (A1, A2, .........., An) uma relação com n atributos, ou seja, cada linha de R conterá n colunas. R é chamado de esquema da relação, enquanto uma instância de R é um conjunto específico de valores usados para popular a tabela R.
+---
+- Manuseio de dados no modelo relacional
+    - O acesso e manipulação de dados através da linguagem SQL é realizado de forma declarativa. Ou seja, quando realizamos uma consulta com SQL, não precisamos especificar como o gerenciador irá obter os dados desejados. De fato, precisamos apenas definir o que desejamos que seja retornado a partir da consulta.
+---
+- SQL: a linguagem relacional-padrão
     - 
+
 
