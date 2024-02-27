@@ -47,4 +47,4 @@
 
 ---
 - Índices em bancos de dados relacionais
-    - 
+    - Podemos definir os índices, de maneira simplificada, como estruturas contendo pares de valores referentes ao banco de dados: o primeiro valor é uma chave de busca (search-key), que é o valor que estamos buscando nas tabelas que compõem o esquema relacional. O segundo valor é a posição relativa (página ou bloco de disco mais registro) daquela chave de busca no arquivo que persiste os dados referentes a determinada tabela.
