@@ -13,13 +13,17 @@
 ---
 - Guia de Estilos
     - PEP-08
+
         ![pep_08](../images/pep_08.png)
 
     - PEP-20
+
         ![pep_20](../images/pep_20.png)
 
     - PEP-257
+
         ![pep_257](../images/pep_257.png)
+        
 ---
 - Nomenclatura
     ![nomenclatura_1](../images/nomenclatura_1.png)
