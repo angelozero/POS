@@ -11,29 +11,32 @@ const ProdutoList = (props: Props) => {
 
     return (
         <div>
-
             <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Quantidade</th>
-                    <th>Valor</th>
-                    <th>Ação</th>
-                </tr>
-                {list.map(produto => {
+                <tbody>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Valor</th>
+                        <th>Ação</th>
+                    </tr>
+                </tbody>
+                {list.map((produto, index) => {
                     return (
-                        <tr key={produto.id}>
-                            <td>{`${produto.id}`}</td>
-                            <td>{`${produto.nome}`}</td>
-                            <td>{`${produto.quantidade}`}</td>
-                            <td>{`${produto.valor}`}</td>
-                            <td>
-                                <div>
-                                    <input type="button" value="Info" />
-                                    <input type="button" value="Deletar" />
-                                </div>
-                            </td>
-                        </tr>
+                        <tbody>
+                            <tr key={index}>
+                                <td>{`${produto.id}`}</td>
+                                <td>{`${produto.nome}`}</td>
+                                <td>{`${produto.quantidade}`}</td>
+                                <td>{`${produto.valor}`}</td>
+                                <td>
+                                    <div key={index}>
+                                        <input type="button" value="Info" />
+                                        <input type="button" value="Deletar" />
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
                     )
                 })}
             </table>

@@ -18,6 +18,10 @@ const Home = () => {
         setShowPage(ProdutoPageEnum.list)
     }
 
+    const addProduto = (data: IProduto) => {
+        setProdutosList([...produtosList, data]);
+    }
+
     return (
         <>
             <article className="article-header">
@@ -30,13 +34,16 @@ const Home = () => {
                 {
                     showPage === ProdutoPageEnum.list && (
                         <>
-                            <input type="button" value="Adicionar Produto" onClick={onAddProdutoClick} />
+                            <input type="button" value="Adicionar Produto" className="add-produto-btn" onClick={onAddProdutoClick} />
+                            <br></br>
+                            <br></br>
+
                             <ProdutoList list={produtosList} />
                         </>
                     )
                 }
 
-                {showPage === ProdutoPageEnum.add && <AddProduto onVoltarBtnClick={showProdutosListPage} />}
+                {showPage === ProdutoPageEnum.add && <AddProduto onVoltarBtnClick={showProdutosListPage} onSubmitProduto={addProduto} />}
 
             </section>
         </>
