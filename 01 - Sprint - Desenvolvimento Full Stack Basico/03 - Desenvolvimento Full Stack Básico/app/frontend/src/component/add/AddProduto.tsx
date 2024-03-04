@@ -50,7 +50,6 @@ const AddProduto = (props: Props) => {
                 throw new Error('Erro ao enviar a requisição.');
             }
     
-            // Aqui você pode tratar a resposta, se necessário
             const responseData = await response.json();
             console.log('Resposta do servidor:', responseData);
         

@@ -13,6 +13,10 @@ from dotenv import load_dotenv
 from flask import Flask, request
 from flask_cors import CORS
 
+# Swagger
+from flask_openapi3 import Info, Tag
+from flask_openapi3 import OpenAPI
+
 '''
 VARIAVEIS LOCAIS
 '''
@@ -32,14 +36,17 @@ SELECT_PRODUTO_BY_ID = "SELECT * FROM produto WHERE id = (%s);"
 
 
 
-app = Flask(__name__)
+info = Info(title="produto API", version="1.0.0")
+app = OpenAPI(__name__, info=info)
 app.config['CORS_HEADERS'] = 'Content-Type'
 CORS(app, resources={r"/produto": {"origins": "*"}})
+
+produto_tag = Tag(name="produto", description="Cadastro de Produtos")
 
 '''
 URL PARA CADASTRO DE PRODUTO
 '''
-@app.post("/produto")
+@app.post("/produto", summary="get books", tags=[produto_tag])
 def create_produto():
     print("Iniciando cadastro de produto: " + str(request.get_json()) + "\n")
     data = request.get_json()
