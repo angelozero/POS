@@ -1,5 +1,9 @@
-flask
-flask-cors
+Flask
+Flask-Cors
+flask_marshmallow
+SQLAlchemy
+Flask-SQLAlchemy
 python-dotenv
 psycopg2-binary
-flask-openapi3
+flasgger
+marshmallow-sqlalchemy
