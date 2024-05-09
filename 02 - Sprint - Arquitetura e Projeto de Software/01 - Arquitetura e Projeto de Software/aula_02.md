@@ -1,1 +1,25 @@
 # Comunicação e Troca de Dados (Data Exchange)
+- RPC ( Remote Procedure Call )
+    - Permiti que a comunicação entre sistemas distribuídos e heterogêneos, em que os componentes podem ser implementados em diferentes linguagens de programação e diferentes plataformas.
+    - Um cliente pode solicitar que um servidor execute uma função ou procedimento remoto e receber os resultados de volta
+    - Um componente importante nesse processo é a função stub, cujo principal objetivo é agir como um intermediário entre o cliente e o servidor, permitindo que eles se comuniquem pela rede de forma transparente.
+    - O stub é gerado pelo compilador a partir da descrição do serviço ou interface remota, sendo usado para encapsular a comunicação entre o cliente e o servidor.
+---
+- gRPC
+    - Com o gRPC, uma aplicação cliente pode chamar diretamente um método em uma aplicação servidor que está em outra máquina, como se fosse uma chamada a um objeto local. Assim como todo sistema RPC, o gRPC é baseado em torno da ideia de definição de um serviço, especificando métodos que podem ser chamados remotamente com seus parâmetros e retornos.
+    - Do lado do servidor, o servidor implementa suas interfaces e executa um servidor gRPC que vai lidar com as conexões dos clientes.
+    - Do lado do cliente, este tem um stub que oferece os mesmos métodos implementados no servidor.
+---
+- SOAP
+    - O SOAP define a forma de codificar objetos em formato XML e enviá-los pela rede usando protocolos como HTTP e SMTP
+    - Uma mensagem SOAP consiste em um envelope SOAP que encapsula o corpo da mensagem e que pode incluir um cabeçalho (opcional).
+---
+- REST
+    - A proposta de Fielding era que a escalabilidade da web fosse governada por um conjunto de requisitos-chaves (key constraints). Segundo ele, a continuidade da expansão seria possível se cada uma dessas restrições fosse atendida de forma igual. Essas restrições/limitações continuam atuais, pois os conceitos ainda são válidos, e devem ser observadas e atendidas no desenvolvimento de todo e qualquer sistema web (COOKSEY, 2016). Fielding as categorizou em seis grupos: cliente-servidor; uniformidade de interfaces; sistema em camadas; uso de cache; ausência de estado; e disponibilização de código sob demanda.
+    - Além da relevância para a evolução da web que temos hoje, Fielding também foi um dos autores originais da especificação do HTTP/1.0 e o principal autor da especificação HTTP/1.1. Como se não fosse o bastante, em sua tese de doutorado, se dedicou ao estudo da arquitetura de sistemas distribuídos, mais precisamente à definição de um novo estilo, o REST.
+    - REST é um padrão que faz uso do protocolo HTTP e dos métodos GET, POST, PUT e DELETE para a manipulação de recursos.
+---
+- GraphQl
+    - É focado na entrega de recursos, se torna necessária a construção de várias rotas.
+    - É uma linguagem de consulta para APIs, desenvolvida com base em princípios de arquiteturas, como os observados no REST.
+    - É baseado em esquemas de tipos e usa consultas para obter informações específicas de um servidor. Isso significa que, em vez de fazer várias solicitações para diferentes recursos e obter mais informações do que o necessário, o cliente pode especificar exatamente quais dados deseja em uma única consulta GraphQL.
