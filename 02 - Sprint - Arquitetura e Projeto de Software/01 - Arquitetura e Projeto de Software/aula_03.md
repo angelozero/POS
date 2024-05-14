@@ -1,1 +1,22 @@
 # Teste e Publicação
+- Testes unitários
+    - Os testes unitários, ou testes funcionais, visam a verificar o comportamento individual de unidades isoladas de código, como funções, métodos ou classes. Eles garantem que cada unidade funcione corretamente de acordo com suas especificações.
+---
+- Testes de integração
+    - Nesse tipo de teste, temos um escopo maior de atuação e testamos a interação entre as diferentes partes da API e suas dependências externas, como bancos de dados, serviços web ou outras APIs. Esses testes garantem que os componentes da API se comuniquem corretamente e que as integrações externas estejam funcionando conforme o esperado.
+---
+- Testes de aceitação
+    - Esses testes são escritos do ponto de vista do usuário e testam os fluxos de uso principais da API para garantir que ela funcione corretamente em cenários reais de uso. Esses cenários reais são geralmente escritos junto com cliente ou com seus representantes.
+---
+- Testes de carga
+    - Já os testes de carga e desempenho avaliam a capacidade da API de lidar com cargas de trabalho intensas e medem seu desempenho sob condições de alto tráfego. Eles ajudam a identificar gargalos de desempenho, tempos de resposta lentos e limites de escalabilidade, permitindo otimizações e ajustes adequados.
+---
+- Teste de segurança
+    - Os testes de segurança avaliam a resistência da API a ameaças de segurança, como injeção de código, ataques de negação de serviço, autenticação inadequada, entre outras. Eles garantem que a API esteja protegida contra vulnerabilidades conhecidas e cumpra as melhores práticas de segurança.
+---
+- Publicação
+    - Seguindo uma abordagem mais tradicional, é possível hospedar a API em um servidor dedicado, em uma máquina virtual ou em um provedor de hospedagem. Nessa abordagem, você instala o servidor web (por exemplo, Nginx) e implanta a API como um aplicativo nesse servidor. Isso requer a configuração e o gerenciamento do ambiente de hospedagem, incluindo a instalação de dependências e a configuração adequada do servidor.
+    - Uma opção mais simplificada é utilizar uma plataforma de nuvem que fornece serviços gerenciados para hospedar e executar a API. Exemplos populares incluem o Google Cloud Platform (GCP), o Microsoft Azure e o Amazon Web Services (AWS). Essas plataformas fornecem serviços de hospedagem gerenciados, como o Google App Engine, o Azure App Service e o AWS Elastic Beanstalk, que cuidam da infraestrutura subjacente, da escalabilidade e do gerenciamento.
+    - Outra opção bem popular é o uso de contêineres, como Docker, e orquestradores de contêineres, como Kubernetes ou Docker Swarm. Você pode empacotar sua API REST em um contêiner e implantá-lo em um ambiente de orquestração que gerencia a execução e o dimensionamento dos contêineres. Isso fornece uma implantação consistente, escalabilidade horizontal e gerenciamento simplificado da infraestrutura.
+---
+- 
