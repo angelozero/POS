@@ -1,0 +1,1 @@
+# Terceira Maneira (Aprendizado): Gestão de Mudanças e DevSecOps

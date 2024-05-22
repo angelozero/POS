@@ -1,1 +1,27 @@
 # Aspecto Humano na Arquitetura de Microsserviços
+- Interfaces com o usuário
+    - O modelo de responsabilidade mais utilizado na indústria atualmente é ter um time especializado em front-end que cuida de todas as interfaces gráficas de um sistema. Apesar de haver algumas vantagens em se particionar o sistema dessa forma, alguns autores — em particular, Sam Newman — defendem a ideia de que o melhor é optar por equipes multidisciplinares divididas por subdomínio de negócio, e não por conhecimento técnico.
+---
+- Desafios técnicos
+    -  Tecnologias mais recentes, como aplicativos de página única (a famosa single page application — SPA), apresentam desafios na decomposição de interfaces, e a crescente variedade de dispositivos aumenta a complexidade das soluções.
+    - O objetivo é fornecer aos usuários uma experiência de software homogênea, seja por meio de um navegador ou um aplicativo móvel, e integrar a funcionalidade da interface do usuário de forma eficaz, superando os desafios apresentados por aplicativos de página única, dispositivos móveis e outros fatores
+---
+- Padrão: front-end monolítico
+    - O padrão front-end monolítico ilustra uma abordagem arquitetônica em que a interface do usuário (UI) gerencia todo o estado e o comportamento, enquanto utiliza microsserviços de apoio para recuperar dados ou executar as operações necessárias.
+    - Em uma aplicação de comércio de músicas, a interface do usuário solicita dados do microsserviço Álbum para exibir informações sobre um álbum e sua lista de faixas. Além disso, a interface do usuário obtém informações sobre as ofertas especiais mais recentes, consultando o microsserviço de Promoções. Os microsserviços retornam dados em formato JSON (JavaScript Object Notation, um formato muito comum de comunicação na web), que a interface do usuário utiliza para atualizar as informações exibidas.
+    - O padrão de front-end monolítico é comumente usado no desenvolvimento de aplicativos de página única (SPAs), principalmente quando há uma equipe dedicada de front-end envolvida. Os microsserviços nesse padrão se concentram no compartilhamento de informações em um formato facilmente interpretável pela interface do usuário, geralmente usando JSON para interfaces baseadas na web. A interface do usuário é responsável por criar componentes de interface, gerenciar a sincronização de estado com o back-end e manipular dados textuais recebidos de microsserviços.
+---
+- Padrão: micro front-ends
+    - A abordagem de micro front-end é um padrão organizacional que permite que diferentes seções de um front-end sejam desenvolvidas e implantadas de forma independente. É definido como um estilo de arquitetura em que aplicativos de front-end entregues separadamente são combinados para criar um sistema unificado. Esse padrão se torna crucial para as equipes que buscam ter a responsabilidade de ponta a ponta dos microsserviços de back-end e da interface do usuário correspondente. Enquanto os microsserviços oferecem implementabilidade independente para a funcionalidade de back-end, os micro front-ends fornecem o mesmo para essa camada da aplicação.
+---
+- Padrão: gateway agregador
+    - Essencialmente, um gateway de agregação atua como um hub centralizado, conectando interfaces de usuário externas com os microsserviços chamados. Ele filtra e combina com eficiência as chamadas feitas por todas as interfaces de usuário. Ao habilitar a agregação, a interface do usuário pode evitar fazer várias chamadas para recuperar as informações necessárias, reduzindo assim o desperdício de dados recuperados, mas não utilizados.
+---
+- Padrão: back-end para front-end (BFF — back-end for front-end)
+    - Um BFF é projetado para uma interface de usuario especifica, servindo a um unico proposito
+---
+- Arquiteto de Software - Estabelecendo limites do sistema
+    - Como arquitetos, nosso foco deve ser menos no que acontece dentro de uma zona e mais nas interações entre as zonas. Isso implica dedicar tempo para entender como nossos microsserviços se comunicam entre si e garantir que podemos monitorar efetivamente a saúde geral do nosso sistema. Em termos de arquitetura, é assim que criamos nosso próprio espaço universal
+---
+- Uma construção social
+    - 
