@@ -1,1 +1,5 @@
 # Revisões, Análise Estática e Qualidade do Processo de Software
+
+- Revisão de software envolve a leitura de um artefato de software visando a assegurar que ele está corretamente construído, cumpre sua especificação e atende às necessidades de seus usuários. O objetivo é realizar a validação (quando envolve o cliente) e a verificação estática de artefatos de software em busca de defeitos. Diferentemente do teste de software, a revisão não envolve a execução do software. Enquanto o teste revela falhas, a revisão busca encontrar o defeito diretamente no artefato. A revisão de software pode ser aplicada a qualquer artefato produzido ao longo do processo de desenvolvimento de software
+
+- A qualidade do produto de software é fortemente influenciada pela qualidade do seu processo de construção e pelas boas práticas da engenharia de software contidas nesse processo
