@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionários</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Cadastrar um funcionário</h2>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div class="form-group">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="departamento">Departamento:</label>
+                <select id="departamento" name="departamento">
+                    <!-- Departamentos serão preenchidos dinamicamente -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep">
+            </div>
+            <div class="form-group">
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua">
+            </div>
+            <div class="form-group">
+                <label for="numero">Numero:</label>
+                <input type="text" id="numero" name="numero">
+            </div>
+            <div class="form-group">
+                <label for="rua">Complemento:</label>
+                <input type="text" id="complemento" name="complmento">
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro">
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade">
+            </div>
+            <div class="form-group">
+                <label for="uf">UF:</label>
+                <input type="text" id="uf" name="uf">
+            </div>
+            <div class="button-container">
+                <button id="cadastrar-btn">Cadastrar</button>
+            </div>
+        </div>
+        <div class="list-container">
+            <h2>Lista de Funcionários</h2>
+            <div class="filter-container">
+                <input type="text" id="filtro-nome" placeholder="Filtrar por Nome">
+                <input type="text" id="filtro-email" placeholder="Filtrar por Email">
+                <input type="text" id="filtro-departamento" placeholder="Filtrar por Departamento">
+            </div>
+            <div class="list-item">
+                <div><strong>ID</strong></div>
+                <div><strong>Nome</strong></div>
+                <div><strong>Email</strong></div>
+                <div><strong>Departamento</strong></div>
+                <div><strong>Ações</strong></div>
+            </div>
+            <div id="funcionarios-list">
+                <!-- Itens da lista serão preenchidos dinamicamente aqui -->
+            </div>
+            <div class="pagination-container">
+                <button id="anterior-btn" disabled>Anterior</button>
+                <div id="pagination-text">Página 1 de 1</div>
+                <button id="proximo-btn" disabled>Próximo</button>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="form-container">
+                    <h1>Predição de Satisfação de Funcionários</h1>
+                    <form id="predictionForm">
+
+                        <div class="form-group">
+                            <label for="satisfaction_level">Satisfação:</label>
+                            <input type="number" id="satisfaction_level" name="satisfaction_level" required step="0.01"
+                                min="0.0" max="1.0">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last_evaluation">Última Avaliação:</label>
+                            <input type="number" id="last_evaluation" name="last_evaluation" required step="0.01"
+                                min="0.0" max="1.0">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="number_project">Número de Projetos:</label>
+                            <input type="number" id="number_project" name="number_project" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="average_montly_hours">Horas Mensais Médias:</label>
+                            <input type="number" id="average_montly_hours" name="average_montly_hours" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time_spend_company">Tempo na Empresa:</label>
+                            <input type="number" id="time_spend_company" name="time_spend_company" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="work_accident">Acidente de Trabalho:</label>
+                            <input type="number" id="work_accident" name="work_accident" required min="0" max="1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="promotion_last_5years">Promoção nos últimos 5 anos:</label>
+                            <input type="number" id="promotion_last_5years" name="promotion_last_5years" required
+                                min="0" max="1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dept">Departamento:</label>
+                            <select id="dept" name="dept">
+                                <option value="sales">Sales</option>
+                                <option value="accounting">Accounting</option>
+                                <option value="hr">HR</option>
+                                <option value="it">IT</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="product_mng">Product Mng</option>
+                                <option value="sales">Sales</option>
+                                <option value="support">Support</option>
+                                <option value="technical">Technical</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="salary">Salário:</label>
+                            <select id="salary" name="salary">
+                                <option value="low">Baixo</option>
+                                <option value="medium">Médio</option>
+                                <option value="high">Alto</option>
+                            </select>
+                        </div>
+
+                        <div class="button-container">
+                            <button type="submit">Prever Satisfação</button>
+                        </div>
+                    </form>
+
+                    <h2 id="result"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up para exibir mensagens -->
+    <div id="popup" class="popup"></div>
+
+    <!-- Janela de Edição -->
+    <div id="edit-window" class="edit-window">
+        <h2>Editar Funcionário</h2>
+        <div class="form-group">
+            <label for="nome-edit">Nome:</label>
+            <input type="text" id="nome-edit" name="nome">
+        </div>
+        <div class="form-group">
+            <label for="sobrenome-edit">Sobrenome:</label>
+            <input type="text" id="sobrenome-edit" name="sobrenome">
+        </div>
+        <div class="form-group">
+            <label for="email-edit">Email:</label>
+            <input type="text" id="email-edit" name="email">
+        </div>
+        <div class="form-group">
+            <label for="departamento-edit">Departamento:</label>
+            <select id="departamento-edit" name="departamento">
+                <!-- Departamentos serão preenchidos dinamicamente -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="cep-edit">CEP:</label>
+            <input type="text" id="cep-edit" name="cep">
+        </div>
+        <div class="form-group">
+            <label for="rua-edit">Rua:</label>
+            <input type="text" id="rua-edit" name="rua">
+        </div>
+        <div class="form-group">
+            <label for="numero-edit">Numero:</label>
+            <input type="text" id="numero-edit" name="number">
+        </div>
+        <div class="form-group">
+            <label for="rua">Complemento:</label>
+            <input type="text" id="complemento-edit" name="complmento">
+        </div>
+        <div class="form-group">
+            <label for="bairro-edit">Bairro:</label>
+            <input type="text" id="bairro-edit" name="bairro">
+        </div>
+        <div class="form-group">
+            <label for="cidade-edit">Cidade:</label>
+            <input type="text" id="cidade-edit" name="city">
+        </div>
+        <div class="form-group">
+            <label for="uf-edit">UF:</label>
+            <input type="text" id="uf-edit" name="uf">
+        </div>
+        <div class="button-container">
+            <button id="editar-btn">Editar</button>
+            <button id="voltar-btn">Voltar</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="cep.js"></script>
+
+</body>
+
+</html>

@@ -7,6 +7,9 @@ from datetime import datetime
 from dotenv import load_dotenv
 import json
 from via_cep_service import ViaCEPService
+import joblib
+import numpy as np
+import pandas as pd
 
 import os
 import re
@@ -15,6 +18,10 @@ load_dotenv()
 SQLALCHEMY_DATABASE_URI = os.getenv("DB_URL")
 
 app = Flask(__name__)
+
+# Carregar o modelo
+model = joblib.load("best_model_employee_attrition.pkl")
+feature_names = joblib.load("best_model_employee_feature_names.pkl")
 
 app.config["SQLALCHEMY_DATABASE_URI"] = SQLALCHEMY_DATABASE_URI
 app.config["CORS_HEADERS"] = "Content-Type"
@@ -248,7 +255,10 @@ def update_employee(id):
     if address_data:
         address = Address.query.filter_by(id=employee.address_id).first()
         if address is None:
-            return jsonify({"error": "Endereço vinculado ao funcionário não encontrado"}), 404
+            return (
+                jsonify({"error": "Endereço vinculado ao funcionário não encontrado"}),
+                404,
+            )
 
         neighborhood = address_data.get("neighborhood")
         number = address_data.get("number")
@@ -282,7 +292,6 @@ def update_employee(id):
         return employee_detail_response(employee), 201
 
     return jsonify({"message": "Nenhum dado para atualização fornecido"}), 400
-
 
 
 @app.route("/api/funcionario/<id>", methods=["DELETE"])
@@ -343,6 +352,47 @@ def create_department():
         jsonify({"id": new_department.id, "name": new_department.name}),
         201,
     )
+
+
+@app.route("/api/predict", methods=["POST"])
+def predict():
+    data = request.get_json()
+
+    # Criando um DataFrame a partir dos dados recebidos
+    input_data = pd.DataFrame(
+        {
+            "satisfaction_level": [float(data["satisfaction_level"])],
+            "last_evaluation": [float(data["last_evaluation"])],
+            "number_project": [int(data["number_project"])],
+            "average_montly_hours": [int(data["average_montly_hours"])],
+            "time_spend_company": [int(data["time_spend_company"])],
+            "work_accident": [int(data["work_accident"])],
+            "promotion_last_5years": [int(data["promotion_last_5years"])],
+            "dept": [data["dept"]],
+            "salary": [data["salary"]],
+        }
+    )
+
+    # Codificação One-Hot para 'dept'
+    dept_dummies = pd.get_dummies(input_data['dept'], prefix='dept')
+    input_data = pd.concat([input_data, dept_dummies], axis=1)
+    input_data.drop('dept', axis=1, inplace=True)
+
+    # Codificação Ordinal para 'salary'
+    salary_mapping = {'low': 0, 'medium': 1, 'high': 2}
+    input_data['salary'] = input_data['salary'].map(salary_mapping)
+
+    # Asegurando que a entrada possui a mesma estrutura que o modelo
+    input_data = input_data.reindex(columns=feature_names, fill_value=0)
+
+    # Realizando a predição
+    prediction = model.predict(input_data)
+
+    # Armazenando o resultado em uma variável
+    result = int(prediction[0])
+
+    # Retornando a variável
+    return jsonify({"prediction": result})
 
 
 def employee_detail_response(employee):

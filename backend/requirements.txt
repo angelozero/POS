@@ -1,0 +1,17 @@
+Flask
+Flask-Cors
+flask_marshmallow
+SQLAlchemy
+Flask-SQLAlchemy
+python-dotenv
+psycopg2-binary
+flasgger
+marshmallow-sqlalchemy
+faker    
+requests
+joblib
+pytest
+hypothesis
+numpy
+scikit-learn
+pandas
