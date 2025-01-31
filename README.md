@@ -1,4 +1,4 @@
-# POS - Engenharia de Software - Puc Rio
+# Pós-Graduação em Engenharia de Software - PUC Rio
 
 ![puc_rio](https://www.educabras.com/blog/wp-content/uploads/2020/09/puc-rio-logo-grande-1024x431.jpg)
 
